@@ -19,4 +19,4 @@ Route::get('/', [PageController::class, 'homepage'])->name('homepage');
 
 Route::get('/movie-list', [MovieController::class, 'movieList']) ->name('movie-list');
 
-// Route::get('/', [MovieController::class, 'movieDetail']) ->name('movie-detail');
+Route::get('/movie-detail', [MovieController::class, 'movieDetail']) ->name('movie-detail');
