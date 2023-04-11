@@ -14,8 +14,8 @@ class MovieController extends Controller
     }
     
     public function movieDetail($id) {        
-        $movie = Movie::find($id);
-        if(!$movie) abort(404);
+        $movie = Movie::findOrFail($id);
+        // if(!$movie) abort(404);
         return view('movie-detail', compact('movie'));
     }
 }
