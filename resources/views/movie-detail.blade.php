@@ -7,16 +7,10 @@
   <section>
     <div class="container">
       <div class="row">
-        @forelse ($movies as $movie)
-          <div class="col-3">
-            @include('partials._movie-card')
-          </div>
-        @empty
-          <div class="col-12">
-            <h2>Nessun libro nella lista</h2>
-          </div>
-        @endforelse
+        <div class="col-12">
+          @include('partials._movie-card')
+        </div>
+      </div>
     </div>
-  </div>
   </section>
 @endsection

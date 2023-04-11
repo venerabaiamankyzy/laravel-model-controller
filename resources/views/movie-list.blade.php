@@ -7,13 +7,13 @@
   <section>
     <div class="container">
       <div class="row">
-        @forelse ($movies as $movie)
+        @forelse($movies as $movie)
           <div class="col-4">
             @include('partials._movie-card')
           </div>
         @empty
           <div class="col-12">
-            <h2>Nessun libro nella lista</h2>
+            <h2>Nessun film nella lista</h2>
           </div>
         @endforelse
     </div>
